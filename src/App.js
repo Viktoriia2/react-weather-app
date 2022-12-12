@@ -1,13 +1,14 @@
 import React from "react";
+import WeatherSearch from "./WeatherSearch.js";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="background">
-      <header className="App-header">
-        <h1>Hello World</h1>
-        <h2>By </h2>
-      </header>
+    <div className="App">
+      <div className="container-fluid">
+        <WeatherSearch defaultCity="Warsaw"/>
+      </div>
     </div>
   );
 }
